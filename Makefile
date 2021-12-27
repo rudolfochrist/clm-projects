@@ -43,6 +43,9 @@ quicklisp-systems.txt: dist-url.txt
 
 systems.txt: quicklisp-systems.txt quicklisp-sources.txt
 	sbcl --script indexer.lisp systems.txt quicklisp-systems.txt quicklisp-sources.txt
+	@for prj in $(projects)/* ; do \
+	  cat $$prj >> systems.txt
+	done
 
 .PHONY:
 prepare-dist:
@@ -54,4 +57,4 @@ prepare-dist:
 new-dist: prepare-dist systems.txt
 	@read -p "Enter new version: " version
 	cp systems.txt dists/system-$$version.txt
-	echo "$$version" | sed s/-//g  >> version.txt
+	echo "$$version" | sed -E s/-\|\\.//g  >> version.txt
