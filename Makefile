@@ -18,10 +18,12 @@ INSTALL_DATA=$(INSTALL) -m 644
 LS=/usr/local/bin/gls
 MAKEINFO=/usr/local/bin/makeinfo
 
-all: quicklisp-sources.txt quicklisp-systems.txt
+.PHONY:
+all: new-dist
 
+.PHONY:
 clean:
-	-rm quicklisp-sources.txt dist.txt dist-url.txt quicklisp-systems
+	-rm quicklisp-sources.txt dist.txt dist-url.txt quicklisp-systems systems.txt version.txt
 
 quicklisp-sources.txt:
 	@for proj in $(ql_projects)/* ; do \
@@ -39,4 +41,17 @@ dist-url.txt: dist.txt
 quicklisp-systems.txt: dist-url.txt
 	$(shell curl $(shell cat $<) -o quicklisp-systems.txt)
 
-.PHONY: all clean
+systems.txt: quicklisp-systems.txt quicklisp-sources.txt
+	sbcl --script indexer.lisp systems.txt quicklisp-systems.txt quicklisp-sources.txt
+
+.PHONY:
+prepare-dist:
+	-mkdir -p dists
+	-rm systems.txt version.txt
+
+.PHONY:
+.ONESHELL:
+new-dist: prepare-dist systems.txt
+	@read -p "Enter new version: " version
+	cp systems.txt dists/system-$$version.txt
+	echo "$$version" | sed s/-//g  >> version.txt
