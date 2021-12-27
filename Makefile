@@ -23,7 +23,7 @@ all: new-dist
 
 .PHONY:
 clean:
-	-rm quicklisp-sources.txt dist.txt dist-url.txt quicklisp-systems systems.txt version.txt
+	-rm quicklisp-sources.txt dist.txt dist-url.txt quicklisp-systems.txt systems.txt version.txt
 
 quicklisp-sources.txt:
 	@for proj in $(ql_projects)/* ; do \
