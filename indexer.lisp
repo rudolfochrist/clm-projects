@@ -55,3 +55,27 @@
                (progn
                  (setf (s-system-source s-system) source)
                  s-system)))
+
+(defun write-clm-index-file (filename ql-systems-file ql-sources-file)
+  (when (and (probe-file ql-systems-file)
+             (probe-file ql-sources-file))
+    (let* ((ql-system-index (create-ql-systems-index ql-systems-file))
+           (ql-source-index (create-ql-source-index ql-sources-file))
+           (s-system-index (create-s-systems-index ql-system-index ql-source-index)))
+      (with-open-file (index filename :direction :output :if-exists :error)
+        (loop for sys in s-system-index
+              do (format index "ql ~A ~A 0.0.0 ~A ~{~A ~}~%"
+                         (s-system-project sys)
+                         (s-system-name sys)
+                         (s-system-source sys)
+                         (s-system-dependencies sys)))))))
+
+(let ((argv (uiop:command-line-arguments)))
+  (if (and argv
+           (= 3 (length argv)))
+      (write-clm-index-file
+       (car argv)
+       (cadr argv)
+       (caddr argv))
+      (format *error-output*
+              "Usage: sbcl --script indexer.lisp SYSTEMS-FILENAME QUICKLISP-SYSTEMS-FILE QUICKLISP-SOURCES-FILE")))
