@@ -11,6 +11,14 @@
   for the `cl-manager` project.
 
 
+2.1 systems.txt spec
+~~~~~~~~~~~~~~~~~~~~
+
+  ,----
+  | channel project system-name version source dependencies0..N
+  `----
+
+
 3 AUTHOR
 ========
 

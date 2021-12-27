@@ -10,6 +10,10 @@ clm-projects --- Project index for `cl-manager`
 
 This repository contains the facilities to create and provide an index for the `cl-manager` project.
 
+** systems.txt spec
+
+: channel project system-name version source dependencies0..N
+
 * AUTHOR
 
 Sebastian Christ ([[mailto:rudolfo.christ@pm.me]])
