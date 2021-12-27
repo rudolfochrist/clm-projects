@@ -1,0 +1,23 @@
+#+STARTUP: showall
+#+EXPORT_FILE_NAME: ../README.txt
+#+OPTIONS: toc:nil author:nil
+# This is just the template README. Export to txt to get the real README.
+* NAME
+
+clm-projects --- Project index for `cl-manager`
+
+* DESCRIPTION
+
+This repository contains the facilities to create and provide an index for the `cl-manager` project.
+
+* AUTHOR
+
+Sebastian Christ ([[mailto:rudolfo.christ@pm.me]])
+
+* COPYRIGHT
+
+Copyright (c) 2021 Sebastian Christ (rudolfo.christ@pm.me)
+
+* LICENSE
+
+Released under the MIT license.
