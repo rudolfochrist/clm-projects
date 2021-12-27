@@ -1,2 +1,6 @@
 /.DS_Store
 *.fasl
+/dist-url.txt
+/dist.txt
+/quicklisp-sources.txt
+/quicklisp-systems.txt
