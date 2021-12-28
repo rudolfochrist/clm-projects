@@ -30,7 +30,7 @@
           collect (destructuring-bind (project system-file system-name &rest dependencies)
                       (uiop:split-string system)
                     (declare (ignore system-file))
-                    (setf (gethash project index)
+                    (setf (gethash system-name index)
                           (make-s-system :project project :name system-name :dependencies dependencies)))
           finally (return index))))
 
@@ -44,11 +44,10 @@
 
 
 (defun create-s-systems-index (ql-system-index ql-source-index)
-  (loop for project being the hash-keys of ql-system-index
-          using (hash-value s-system)
-        for source = (gethash project ql-source-index)
+  (loop for s-system being the hash-values of ql-system-index
+        for source = (gethash (s-system-project s-system) ql-source-index)
         if (null source) do
-          (cerror "Found empty source for ~A" project)
+          (cerror "Found empty source for ~A" (s-system-name s-system))
         else if (or (githubp source)
                     (gitlabp source))
                collect
