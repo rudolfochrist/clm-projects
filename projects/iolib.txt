@@ -1,0 +1,7 @@
+core iolib iolib v0.8.4 https://github.com/sionescu/iolib.git iolib.base iolib/multiplex iolib/streams iolib/sockets
+core iolib iolib.base v0.8.4 https://github.com/sionescu/iolib.git iolib.common-lisp alexandria split-sequence
+core iolib iolib/multiplex v0.8.4 https://github.com/sionescu/iolib.git iolib.base iolib/syscalls cffi
+core iolib iolib/streams v0.8.4 https://github.com/sionescu/iolib.git iolib.base iolib/multiplex cffi
+core iolib iolib/sockets v0.8.4 https://github.com/sionescu/iolib.git iolib.base iolib/syscalls iolib/streams babel cffi bordeaux-threads idna swap-bytes
+core iolib iolib.common-lisp v0.8.4 https://github.com/sionescu/iolib.git alexandria
+core iolib iolib/syscalls v0.8.4 https://github.com/sionescu/iolib.git trivial-features cffi iolib.base
