@@ -1,0 +1,5 @@
+core cffi cffi v0.24.1 https://github.com/cffi/cffi.git uiop alexandria trivial-features babel
+core cffi cffi/c2ffi v0.24.1 https://github.com/cffi/cffi.git alexandria cffi
+core cffi cffi/c2ffi-generator v0.24.1 https://github.com/cffi/cffi.git cffi/c2ffi cl-ppcre cl-json
+core cffi cffi-grovel v0.24.1 https://github.com/cffi/cffi.git cffi cffi-toolchain alexandria
+core cffi cffi-toolchain v0.24.1 https://github.com/cffi/cffi.git asdf cffi
