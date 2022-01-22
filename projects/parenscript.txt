@@ -1,1 +1,1 @@
-core parenscript parenscript 0.0.0 https://gitlab.common-lisp.net/parenscript/parenscript.git 
+core parenscript parenscript 0.0.0 https://gitlab.common-lisp.net/parenscript/parenscript.git cl-ppcre anaphora named-readtables
