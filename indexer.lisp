@@ -35,12 +35,15 @@
           finally (return index))))
 
 
-(defun githubp (source)
-  (uiop:string-prefix-p "https://github.com/" source))
+(defvar *verified-hosts*
+  (list "github.com"
+        "gitlab.com"
+        "gitlab.common-lisp.net"))
 
 
-(defun gitlabp (source)
-  (uiop:string-prefix-p "https://gitlab.com/" source))
+(defun verified-host-p (source)
+  (and (uiop:string-prefix-p "https://" source)
+       (member (subseq source 8 (position #\/ source :start 8)) *verified-hosts* :test #'string=)))
 
 
 (defun create-s-systems-index (ql-system-index ql-source-index)
@@ -48,8 +51,7 @@
         for source = (gethash (s-system-project s-system) ql-source-index)
         if (null source) do
           (cerror "Found empty source for ~A" (s-system-name s-system))
-        else if (or (githubp source)
-                    (gitlabp source))
+        else if (verified-host-p source)
                collect
                (progn
                  (setf (s-system-source s-system) source)
