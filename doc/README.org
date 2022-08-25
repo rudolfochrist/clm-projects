@@ -12,16 +12,13 @@ This repository contains the facilities to create and provide an index for the `
 
 ** systems.txt spec
 
-: channel project system-name version source dependencies0..N
+: project system-name source dependencies0..N
 
 * AUTHOR
 
 Sebastian Christ ([[mailto:rudolfo.christ@pm.me]])
 
-* COPYRIGHT
-
-Copyright (c) 2021 Sebastian Christ (rudolfo.christ@pm.me)
 
 * LICENSE
 
-Released under the MIT license.
+Released under the MPL-2.0 license.

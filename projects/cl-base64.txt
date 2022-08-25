@@ -1,1 +1,0 @@
-core cl-base64 cl-base64 20211215 https://github.com/lispmirror/cl-base64.git

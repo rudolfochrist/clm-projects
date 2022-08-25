@@ -1,2 +1,0 @@
-core asdf asdf 3.3.5.4 https://gitlab.common-lisp.net/asdf/asdf.git
-core asdf uiop 3.3.5.4 https://gitlab.common-lisp.net/asdf/asdf.git

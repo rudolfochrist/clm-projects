@@ -1,2 +1,0 @@
-core bordeaux-threads bordeaux-threads v0.8.8 https://github.com/sionescu/bordeaux-threads.git alexandria
-core bordeaux-threads bordeaux-threads/test v0.8.8 https://github.com/sionescu/bordeaux-threads.git bordeaux-threads fiveam

@@ -50,7 +50,7 @@
   (loop for s-system being the hash-values of ql-system-index
         for source = (gethash (s-system-project s-system) ql-source-index)
         if (null source) do
-          (cerror "Found empty source for ~A" (s-system-name s-system))
+          (cerror "Ignore" "Found empty source for ~A" (s-system-name s-system))
         else if (verified-host-p source)
                collect
                (progn
@@ -64,8 +64,9 @@
            (ql-source-index (create-ql-source-index ql-sources-file))
            (s-system-index (create-s-systems-index ql-system-index ql-source-index)))
       (with-open-file (index filename :direction :output :if-exists :error)
+        (format index "# project system-name source dependencies0..N~%")
         (loop for sys in s-system-index
-              do (format index "ql ~A ~A 0.0.0 ~A ~{~A ~}~%"
+              do (format index "~A ~A ~A ~{~A ~}~%"
                          (s-system-project sys)
                          (s-system-name sys)
                          (s-system-source sys)

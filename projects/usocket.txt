@@ -1,1 +1,0 @@
-core usocket usocket v0.8.3 https://github.com/usocket/usocket.git split-sequence

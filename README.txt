@@ -15,7 +15,7 @@
 ~~~~~~~~~~~~~~~~~~~~
 
   ,----
-  | channel project system-name version source dependencies0..N
+  | project system-name source dependencies0..N
   `----
 
 
@@ -25,13 +25,7 @@
   Sebastian Christ (<mailto:rudolfo.christ@pm.me>)
 
 
-4 COPYRIGHT
-===========
-
-  Copyright (c) 2021 Sebastian Christ (rudolfo.christ@pm.me)
-
-
-5 LICENSE
+4 LICENSE
 =========
 
-  Released under the MIT license.
+  Released under the MPL-2.0 license.

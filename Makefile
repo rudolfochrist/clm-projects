@@ -19,7 +19,7 @@ LS=/usr/local/bin/gls
 MAKEINFO=/usr/local/bin/makeinfo
 
 .PHONY:
-all: new-dist
+all: systems.txt
 
 .PHONY:
 clean:
@@ -53,18 +53,3 @@ quicklisp-systems.txt: dist-url.txt
 
 systems.txt: quicklisp-systems.txt quicklisp-sources.txt ediware-sources
 	sbcl --script indexer.lisp systems.txt quicklisp-systems.txt quicklisp-sources.txt
-	@for prj in $(projects)/* ; do \
-	  cat $$prj >> systems.txt
-	done
-
-.PHONY:
-prepare-dist:
-	-mkdir -p dists
-	-rm systems.txt version.txt
-
-.PHONY:
-.ONESHELL:
-new-dist: prepare-dist systems.txt
-	@read -p "Enter new version: " version
-	cp systems.txt dists/system-$$version.txt
-	echo "$$version" | sed -E s/-\|\\.//g  >> version.txt

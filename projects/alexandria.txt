@@ -1,4 +1,0 @@
-core alexandria alexandria-tests v1.4 https://gitlab.common-lisp.net/alexandria/alexandria.git alexandria sb-rt
-core alexandria alexandria v1.4 https://gitlab.common-lisp.net/alexandria/alexandria.git
-core alexandria alexandria-tests v1.3 https://gitlab.common-lisp.net/alexandria/alexandria.git alexandria sb-rt
-core alexandria alexandria v1.3 https://gitlab.common-lisp.net/alexandria/alexandria.git
