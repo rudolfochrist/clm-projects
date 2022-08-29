@@ -1,0 +1,2 @@
+cl-base64 cl-base64 https://github.com/lispmirror/cl-base64.git
+cl-base64 cl-base64/test https://github.com/lispmirror/cl-base64.git cl-base64 ptester kmrcl

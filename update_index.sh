@@ -51,12 +51,16 @@ eval set -- "$params"
 
 
 if [[ -e "systems.txt" ]]; then
+    stamp="$(date +%Y-%m-%d.%s)"
     mkdir -p old
-    mv systems.txt archive
-else
-    if [[ "$update_repos" = true ]]; then
-        make clean
-        git submodule update --recursive --remote
-    fi
-    make
+    mv systems.txt "old/systems-${stamp}.txt"
 fi
+
+if [[ "$update_repos" = true ]]; then
+    make clean
+    git submodule update --recursive --remote
+fi
+
+make
+
+

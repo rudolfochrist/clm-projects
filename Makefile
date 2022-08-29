@@ -9,7 +9,7 @@ quicklisp_dist = https://beta.quicklisp.org/dist/quicklisp.txt
 # paths
 srcdir != pwd
 ql_projects = $(srcdir)/quicklisp-projects/projects
-projects = $(srcdir)/projects
+lispmirror = $(srcdir)/lispmirror
 
 # programs
 INSTALL=/usr/bin/install
@@ -53,3 +53,7 @@ quicklisp-systems.txt: dist-url.txt
 
 systems.txt: quicklisp-systems.txt quicklisp-sources.txt ediware-sources
 	sbcl --script indexer.lisp systems.txt quicklisp-systems.txt quicklisp-sources.txt
+	# copy lispmirror
+	@for f in $(lispmirror)/*; do \
+		cat "$$f" >> $@ ; \
+	done

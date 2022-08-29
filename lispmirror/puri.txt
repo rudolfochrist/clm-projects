@@ -1,0 +1,2 @@
+puri puri https://github.com/lispmirror/puri.git
+puri puri/test https://github.com/lispmirror/puri.git ptester puri
