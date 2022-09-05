@@ -4835,24 +4835,7 @@ zlib zlib https://github.com/sharplispers/zlib.git
 zpb-exif zpb-exif https://github.com/xach/zpb-exif.git asdf 
 zpb-ttf zpb-ttf https://github.com/xach/zpb-ttf.git asdf 
 zsort zsort https://github.com/jorgetavares/zsort.git alexandria 
-bordeaux-threads bordeaux-threads https://github.com/sionescu/bordeaux-threads.git alexandria global-vars trivial-features trivial-garbage
-bordeaux-threads bordeaux-threads/test https://github.com/sionescu/bordeaux-threads.git bordeaux-threads fiveam
-cffi cffi https://github.com/cffi/cffi.git alexandria asdf babel trivial-features uiop
-cffi cffi-examples https://github.com/cffi/cffi.git asdf cffi
-cffi cffi-grovel https://github.com/cffi/cffi.git alexandria asdf cffi cffi-toolchain
-cffi cffi-libffi https://github.com/cffi/cffi.git asdf cffi cffi-grovel trivial-features
-cffi cffi-tests https://github.com/cffi/cffi.git asdf bordeaux-threads cffi-grovel cffi-libffi rt trivial-features
-cffi cffi-tests/example https://github.com/cffi/cffi.git cffi-grovel
-cffi cffi-toolchain https://github.com/cffi/cffi.git asdf cffi
-cffi cffi-uffi-compat https://github.com/cffi/cffi.git asdf cffi
-cffi cffi/c2ffi https://github.com/cffi/cffi.git alexandria cffi
-cffi cffi/c2ffi-generator https://github.com/cffi/cffi.git alexandria cffi cl-json cl-ppcre
-cffi-c-ref cffi-c-ref https://github.com/cffi/cffi.git alexandria asdf cffi
-cffi-c-ref cffi-c-ref/tests https://github.com/cffi/cffi.git alexandria bodge-libc-essentials cffi-c-ref fiveam
 cl-base64 cl-base64 https://github.com/lispmirror/cl-base64.git
 cl-base64 cl-base64/test https://github.com/lispmirror/cl-base64.git cl-base64 ptester kmrcl
 puri puri https://github.com/lispmirror/puri.git
 puri puri/test https://github.com/lispmirror/puri.git ptester puri
-usocket usocket https://github.com/usocket/usocket.git asdf split-sequence
-usocket usocket-server https://github.com/usocket/usocket.git asdf bordeaux-threads usocket
-usocket usocket-test https://github.com/usocket/usocket.git asdf rt usocket-server

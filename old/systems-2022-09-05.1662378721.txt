@@ -4835,8 +4835,6 @@ zlib zlib https://github.com/sharplispers/zlib.git
 zpb-exif zpb-exif https://github.com/xach/zpb-exif.git asdf 
 zpb-ttf zpb-ttf https://github.com/xach/zpb-ttf.git asdf 
 zsort zsort https://github.com/jorgetavares/zsort.git alexandria 
-bordeaux-threads bordeaux-threads https://github.com/sionescu/bordeaux-threads.git alexandria global-vars trivial-features trivial-garbage
-bordeaux-threads bordeaux-threads/test https://github.com/sionescu/bordeaux-threads.git bordeaux-threads fiveam
 cffi cffi https://github.com/cffi/cffi.git alexandria asdf babel trivial-features uiop
 cffi cffi-examples https://github.com/cffi/cffi.git asdf cffi
 cffi cffi-grovel https://github.com/cffi/cffi.git alexandria asdf cffi cffi-toolchain

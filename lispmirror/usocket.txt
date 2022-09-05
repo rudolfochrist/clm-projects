@@ -1,0 +1,3 @@
+usocket usocket https://github.com/usocket/usocket.git asdf split-sequence
+usocket usocket-server https://github.com/usocket/usocket.git asdf bordeaux-threads usocket
+usocket usocket-test https://github.com/usocket/usocket.git asdf rt usocket-server

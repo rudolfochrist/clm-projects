@@ -1,0 +1,2 @@
+bordeaux-threads bordeaux-threads https://github.com/sionescu/bordeaux-threads.git alexandria global-vars trivial-features trivial-garbage
+bordeaux-threads bordeaux-threads/test https://github.com/sionescu/bordeaux-threads.git bordeaux-threads fiveam

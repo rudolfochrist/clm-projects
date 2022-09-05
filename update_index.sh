@@ -16,6 +16,7 @@ usage ()
 Usage: $(basename $0) [options]
 
 Options:
+  --skip-update-repos                    Don't update repos.
   -v, --version                          Show version.
   -h, --help                             Show help.
 EOF
