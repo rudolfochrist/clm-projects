@@ -13,7 +13,7 @@ assert_value ()
 usage ()
 {
     cat <<EOF
-Usage: $(basename $0) [options]
+Usage: $(basename "$0") [options]
 
 Options:
   --skip-update-repos                    Don't update repos.
