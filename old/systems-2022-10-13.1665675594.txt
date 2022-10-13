@@ -4851,7 +4851,6 @@ cffi-c-ref cffi-c-ref https://github.com/cffi/cffi.git alexandria asdf cffi
 cffi-c-ref cffi-c-ref/tests https://github.com/cffi/cffi.git alexandria bodge-libc-essentials cffi-c-ref fiveam
 cl-base64 cl-base64 https://github.com/lispmirror/cl-base64.git
 cl-base64 cl-base64/test https://github.com/lispmirror/cl-base64.git cl-base64 ptester kmrcl
-cl-utilities cl-utilities https://github.com/lispmirror/cl-utilities.git
 puri puri https://github.com/lispmirror/puri.git
 puri puri/test https://github.com/lispmirror/puri.git ptester puri
 usocket usocket https://github.com/usocket/usocket.git asdf split-sequence
