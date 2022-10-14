@@ -1,0 +1,2 @@
+clog-terminal clog-terminal https://github.com/rabbibotton/clog-terminal.git clog
+clog-terminal clog-terminal/tools https://github.com/rabbibotton/clog-terminal.git clog-terminal clog/tools
