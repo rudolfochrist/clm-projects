@@ -1,0 +1,2 @@
+bobbin bobbin https://github.com/sjl/bobbin.git split-sequence
+bobbin bobbin/test https://github.com/sjl/bobbin.git bobbin 1am

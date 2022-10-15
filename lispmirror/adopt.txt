@@ -1,0 +1,2 @@
+adopt adopt https://github.com/sjl/adopt.git bobbin split-sequence
+adopt adopt/test https://github.com/sjl/adopt.git adopt 1am
