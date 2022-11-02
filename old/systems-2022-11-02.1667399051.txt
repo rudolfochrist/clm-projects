@@ -4856,13 +4856,8 @@ cffi-c-ref cffi-c-ref/tests https://github.com/cffi/cffi.git alexandria bodge-li
 cl-base64 cl-base64 https://github.com/lispmirror/cl-base64.git
 cl-base64 cl-base64/test https://github.com/lispmirror/cl-base64.git cl-base64 ptester kmrcl
 cl-utilities cl-utilities https://github.com/lispmirror/cl-utilities.git
-clog-ace clog-ace https://github.com/rabbibotton/clog-ace.git clog
-clog-ace clog-ace/tools https://github.com/rabbibotton/clog-ace.git clog clog-ace clog/tools
 clog-terminal clog-terminal https://github.com/rabbibotton/clog-terminal.git clog
 clog-terminal clog-terminal/tools https://github.com/rabbibotton/clog-terminal.git clog-terminal clog/tools
-clog clog https://github.com/rabbibotton/clog.git clack websocket-driver alexandria hunchentoot cl-ppcre bordeaux-threads trivial-open-browser parse-float quri lack-middleware-static lack-request lack-util-writer-stream closer-mop mgl-pax cl-template atomics sqlite cl-dbi cl-pass cl-isaac
-clog clog/docs https://github.com/rabbibotton/clog.git clog 3BMD colorize
-clog clog/tools https://github.com/rabbibotton/clog.git clog clog-ace clog-terminal s-base64 swank definitions
 puri puri https://github.com/lispmirror/puri.git
 puri puri/test https://github.com/lispmirror/puri.git ptester puri
 usocket usocket https://github.com/usocket/usocket.git asdf split-sequence
