@@ -1,0 +1,2 @@
+parenscript parenscript https://gitlab.common-lisp.net/parenscript/parenscript.git cl-ppcre anaphora named-readtables
+parenscript parenscript.tests https://gitlab.common-lisp.net/parenscript/parenscript.git parenscript fiveam cl-js
