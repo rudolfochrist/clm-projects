@@ -1,4 +1,3 @@
-# 2023-01-16.1673871043
 # project system-name source dependencies0..N
 1am 1am https://github.com/lmj/1am.git
 3b-bmfont 3b-bmfont https://github.com/3b/3b-bmfont.git alexandria asdf split-sequence
